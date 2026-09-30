@@ -68,7 +68,7 @@ Project/
 │   └── processed/
 │       └── cars_clean.csv
 ├── notebooks/
-│   ├── 01_parsing.ipynb
+│   ├── 01_parsing_full_data_update.ipynb
 │   ├── 02_EDA_final.ipynb
 │   └── 03_ML_model.ipynb
 ├── dashboard/
@@ -83,7 +83,7 @@ Project/
 
 ## Этапы работы
 
-### Этап 1. Сбор данных (`01_parsing.ipynb`)
+### Этап 1. Сбор данных (`01_parsing_full_data_update.ipynb`)
 
 Парсинг Drom.ru по заданным маркам и городам.
 **Результат:** 4006 объявлений, 17 исходных колонок.
@@ -287,7 +287,7 @@ jupyter notebook
 
 Затем запускайте ноутбуки строго по порядку:
 
-1. `notebooks/01_parsing.ipynb` — парсинг данных.
+1. `notebooks/01_parsing_full_data_update.ipynb` — парсинг данных.
 2. `notebooks/02_EDA_final.ipynb` — EDA и предобработка.
 3. `notebooks/03_ML_model.ipynb` — обучение модели.
 

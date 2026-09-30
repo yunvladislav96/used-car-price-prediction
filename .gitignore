@@ -35,5 +35,11 @@ desktop.ini
 *.log
 *.tmp
 
-# Не игнорируем optuna_study.db — это артефакт подбора
 !optuna_study.db
+
+# Project-specific: technical files
+notebooks/catboost_info/
+notebooks/old/
+notebooks/optuna_study.db
+notebooks/04_dashboard.ipynb
+*.db
