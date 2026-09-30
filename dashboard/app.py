@@ -3,16 +3,19 @@ import pandas as pd
 import plotly.express as px
 from catboost import CatBoostRegressor
 
-st.title("Мой первый дашборд на Streamlit!")
-st.write("Привет! Это приложение для анализа цен на автомобили.")
+st.title("Прогноз стоимости автомобилей с пробегом")
+st.write(
+    "Интерактивный дашборд дипломного проекта: анализ факторов "
+    "ценообразования и прогноз цены на основе модели CatBoost."
+)
 
 # Загрузка данных
 df = pd.read_csv("../data/processed/cars_clean.csv")
-st.write(f"Данные загружены: {df.shape[0]} строк, {df.shape[1]} колонок.")
+st.caption(f"Данные: {df.shape[0]} объявлений, {df.shape[1]} признаков.")
 # Загружаем обученную модель
 model = CatBoostRegressor()
 model.load_model("../models/catboost_model.cbm")
-st.write("Модель загружена")
+st.caption("Модель CatBoost загружена успешно.")
 
 # Простой интерактивный элемент
 st.sidebar.header("Фильтры")
