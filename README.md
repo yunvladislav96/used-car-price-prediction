@@ -62,6 +62,7 @@ ML-проект по предсказанию рыночной цены авто
 Project/
 ├── README.md
 ├── requirements.txt
+├── diplom_presentation.pdf
 ├── data/
 │   ├── raw/
 │   │   └── drom_cars_4000.csv
