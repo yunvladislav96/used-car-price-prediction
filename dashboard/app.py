@@ -10,11 +10,11 @@ st.write(
 )
 
 # Загрузка данных
-df = pd.read_csv("../data/processed/cars_clean.csv")
+df = pd.read_csv("data/processed/cars_clean.csv")
 st.caption(f"Данные: {df.shape[0]} объявлений, {df.shape[1]} признаков.")
 # Загружаем обученную модель
 model = CatBoostRegressor()
-model.load_model("../models/catboost_model.cbm")
+model.load_model("models/catboost_model.cbm")
 st.caption("Модель CatBoost загружена успешно.")
 
 # Простой интерактивный элемент
